@@ -1,0 +1,141 @@
+body {
+    text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+p,
+h1,
+h3 {
+    line-height: 1.5;
+}
+
+p {
+    font-size: 18px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* while in DESKTOP screen, centering the content */
+@media (min-width: 500px) {
+
+    .all {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    /* shadow and corners */
+    .container-fluid {
+        box-shadow: 5px 5px 10px grey;
+        width: 50%;
+        border-radius: 30px;
+    }
+
+    .left {
+        border-radius: 30px;
+    }
+
+}
+
+/* left col */
+.left {
+    background: linear-gradient(to bottom, #7857FF, #2E2BE9);
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 5%;
+}
+
+.left h5 {
+    margin-bottom: 1.5rem;
+}
+
+.left h4 {
+    margin: 1rem 0;
+}
+
+.left p {
+    margin: 0 0.5rem;
+}
+
+.circle {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+    border-radius: 100%;
+    position: relative;
+    /* centering circle content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle h1 {
+    font-weight: 800;
+}
+
+/* right col */
+.right {
+    padding: 5%;
+    text-align: left;
+}
+
+.right h5 {
+    font-weight: bold;
+}
+
+/* button */
+.btn {
+    width: 100%;
+    border-radius: 100px;
+    padding: 5%;
+    background-color: hsl(224, 30%, 27%);
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+
+/* summary rows */
+.summary-row {
+    padding: 5%;
+    height: 45px;
+    margin: 5% 0;
+    border-radius: 10px;
+    /* centering content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 95%);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsl(39, 100%, 95%);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 95%);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 95%);
+    color: hsl(234, 85%, 45%);
+}
